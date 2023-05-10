@@ -65,13 +65,13 @@ main {
 }
 
 .animation {
-    -webkit-animation: fadein 1.8s, slide-right .7s forwards;
-    -webkit-animation-delay: .2s;
+    -webkit-animation: fadein 2.3s, slide-right .7s forwards;
+    -webkit-animation-delay: .1s;
     transform:translateX(-200%);
 }
 
 @-webkit-keyframes slide-right {
-    to {transform:translateX(0);}
+    to { transform:translateX(0); }
 }
 
 @-webkit-keyframes fadein {
@@ -82,6 +82,10 @@ main {
 #genre-btn, #genre-list, #costs-btn {
     border: 1px solid white;
     border-radius: 0;
+}
+
+#genre-list li a:hover {
+    background-color: #3e3e3e;
 }
 
 .movies-container div {
