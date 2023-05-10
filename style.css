@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-dark {
+    background-color: #141414 !important;
+}
+
+/* NAVBAR */
+
+nav {
+    z-index: 10;
+    position: sticky !important;
+    top: 0;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-nav a {
+    color: rgb(174, 174, 174);
+}
+
+.navbar-nav a:hover {
+    color: white;
+}
+
+.propic {
+    width: 35px;
+}
+
+#kids {
+    text-decoration: none;
+    color: rgb(174, 174, 174) !important;
+}
+
+#propichide {
+    margin: 10px 0;
+    display: none;
+}
+
+#propichide a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    #account-area {
+        display: none;
+    }
+
+    #propichide {
+        display: inline;
+    }
+}
+
+/* SEZIONI FILM */
+
+main {
+    overflow: hidden;
+    padding-right: 5%;
+    height: 100vh;
+}
+
+.animation {
+    -webkit-animation: fadein 1.8s, slide-right .7s forwards;
+    -webkit-animation-delay: .2s;
+    transform:translateX(-200%);
+}
+
+@-webkit-keyframes slide-right {
+    to {transform:translateX(0);}
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#genre-btn, #genre-list, #costs-btn {
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.movies-container div {
+    padding: 3px;
+}
+
+.movies-container > div > img {
+    width: 100%;
+    position: relative;
+}
+
+.movies {
+    transition: 0.2s;
+}
+
+.movies:hover {
+    transform: scale(1.2);
+    z-index: 5;
+}
+
+/* FOOTER */
+
+.fa-brands {
+    font-size: 25px;
+}
